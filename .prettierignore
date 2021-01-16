@@ -10,3 +10,4 @@ yarn.lock
 .env.local
 LICENSE
 .env
+.DS_Store
