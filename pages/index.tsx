@@ -1,25 +1,17 @@
 import { Box, Button, Flex, Text } from '@chakra-ui/react'
 import Head from 'next/head'
-import useAuth from '../src/shared/auth/hooks'
+import IndexBody from '../components/login-body'
+import IndexNav from '../components/nav'
 
 export default function Home() {
-	const { signInWithGoogle, signOut, loggedIn } = useAuth()
 	return (
 		<Box>
 			<Head>
-				<title>Create Next App</title>
+				<title>🏛 Legist</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Flex direction="column">
-				<Text>Hi there! Welcome to Legist!</Text>
-				{!loggedIn ? (
-					<Button onClick={signInWithGoogle}>Hello</Button>
-				) : (
-					<Button colorScheme="lightBeige" onClick={signOut}>
-						Sign Out
-					</Button>
-				)}
-			</Flex>
+			<IndexNav />
+			<IndexBody />
 		</Box>
 	)
 }

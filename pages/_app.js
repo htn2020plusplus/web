@@ -1,6 +1,5 @@
 import { Center, ChakraProvider, Box, extendTheme } from '@chakra-ui/react'
 import AuthProvider from '../src/shared/auth/context'
-import theme from '../src/theme'
 
 const App = ({ Component, pageProps }) => (
 	<AuthProvider>
