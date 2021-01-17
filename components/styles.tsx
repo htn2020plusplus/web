@@ -11,12 +11,12 @@ export const styles = {
 	},
 
 	navFlex: {
-		width: 40 + 'vw',
+		width: `${40}vw`,
 		alignItems: 'right',
 	},
 
 	flex: {
-		width: 40 + 'vw',
+		width: `${40}vw`,
 		alignItems: 'right',
 	},
 }
